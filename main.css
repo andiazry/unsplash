@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +41,7 @@ div.single-result div.image {
   background-color: #eee;
   height: 400px;
   margin-bottom: 20px;
+  animation: fadeIn 1s 0.5s both;
 }
 
 div.single-result span.loading {
@@ -43,4 +53,20 @@ div.single-result span.loading {
 
 div.single-result p span.loading {
   width: 30%;
+}
+
+div.single-result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
 }
